@@ -35,9 +35,23 @@ Main::Main(QWidget *parent)
 
     emit sender->event("hello world");
 
+    //3t
+    m_timer = new QTimer();
+    QObject::connect(m_timer, &QTimer::timeout, this, &Main::onTimeout); // signal, slot
+    m_timer->start(1000);
+
+
+
 }
 
 Main::~Main()
 {
     delete ui;
+}
+
+void Main::onTimeout() //2t refactored onTimeout
+{
+    //4t
+    m_counter++;
+    ui->lcdNumber->display(m_counter); //5t for this to work go main.ui and add lcdNumber
 }

@@ -13,6 +13,9 @@ qt_add_executable(qt-practice
     main.ui
     sender.h sender.cpp
     receiver.h receiver.cpp
+
+
+
 )
 
 target_link_libraries(qt-practice

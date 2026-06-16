@@ -1,4 +1,4 @@
-//1 create receiver and sander header file
+//1 create receiver and sender header file
 
 #ifndef SENDER_H
 #define SENDER_H
