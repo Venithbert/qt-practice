@@ -14,6 +14,7 @@ public:
 signals:
     void event(QString message);  //2 create signal
 
+
 };
 
 #endif // SENDER_H

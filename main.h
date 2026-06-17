@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QTimer> //1t
 
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Main;

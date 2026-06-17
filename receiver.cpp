@@ -10,7 +10,13 @@ void Receiver::onEvent(QString message)
 {
     qInfo() << "Executing slot inside" << this;  //5
     qInfo() << "Message received" << message;
+    qInfo() << "closed" << message;
+}
 
 
 
+//when button clicked this slot will be activated as well
+void Receiver::onButtonClicked()
+{
+    qInfo() << "closed" ;
 }

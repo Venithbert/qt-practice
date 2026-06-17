@@ -9,6 +9,7 @@
 #include "receiver.h"
 
 
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -42,12 +43,20 @@ Main::Main(QWidget *parent)
 
 
 
+    connect(ui->pushButton, &QPushButton::clicked, receiver, &Receiver::onButtonClicked);
+    //basic button. create button in .ui and put its name "pushButton here" as parameter
+    connect(ui->pushButton, &QPushButton::clicked, qApp, &QApplication::quit);
+
 }
+
+
 
 Main::~Main()
 {
     delete ui;
 }
+
+
 
 void Main::onTimeout() //2t refactored onTimeout
 {

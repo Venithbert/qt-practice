@@ -16,13 +16,39 @@
   <widget class="QLCDNumber" name="lcdNumber">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>220</y>
-     <width>201</width>
+     <x>560</x>
+     <y>10</y>
+     <width>231</width>
      <height>161</height>
     </rect>
    </property>
   </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>721</width>
+     <height>491</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>530</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <zorder>textEdit</zorder>
+  <zorder>lcdNumber</zorder>
+  <zorder>pushButton</zorder>
  </widget>
  <resources/>
  <connections/>
