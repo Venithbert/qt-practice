@@ -47,6 +47,12 @@ Main::Main(QWidget *parent)
     //basic button. create button in .ui and put its name "pushButton here" as parameter
     connect(ui->pushButton, &QPushButton::clicked, qApp, &QApplication::quit);
 
+
+    QListWidget *list = new QListWidget(this);
+
+    list->addItem("Apple");
+    list->addItem("Banana");
+    list->addItem("Orange");
 }
 
 

@@ -27,9 +27,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>10</y>
-     <width>721</width>
-     <height>491</height>
+     <y>200</y>
+     <width>641</width>
+     <height>291</height>
     </rect>
    </property>
   </widget>
@@ -46,9 +46,20 @@
     <string>PushButton</string>
    </property>
   </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
   <zorder>textEdit</zorder>
   <zorder>lcdNumber</zorder>
   <zorder>pushButton</zorder>
+  <zorder>listWidget</zorder>
  </widget>
  <resources/>
  <connections/>
